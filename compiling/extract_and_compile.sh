@@ -1,11 +1,7 @@
 #!/bin/bash
 # Extract and compile
 
-#Creates a variable of the first argument passed to the script
-
-tarNum = $1
-
-#Extracts, compiles, and creates archive 
+#Extracts and creates archive 
 
 tar -xzf NthPrime.tgz
 
@@ -13,4 +9,10 @@ tar -xzf NthPrime.tgz
 
 cd NthPrime || exit
 
+#Compiles Program
 
+gcc -o NthPrime main.c nth_prime.c
+
+#Runs program with first arugument presented
+
+./NthPrime "$1"
