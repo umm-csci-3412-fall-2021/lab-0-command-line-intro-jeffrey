@@ -5,6 +5,12 @@
 
 tarNum = $1
 
-tar -xf NthPrime.tgz
+#Extracts, compiles, and creates archive 
+
+tar -xzf NthPrime.tgz
+
+#Enters newly created file
+
+cd NthPrime || exit
 
 
